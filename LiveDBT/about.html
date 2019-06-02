@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <style type="text/css">
+    /* Extra small devices (portrait phones, less than 576px) */
+    /* No media query since this is the default in Bootstrap */
+
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) { 
+        .collapsedNavItem {
+            float: left;
+            width: 25%;
+            padding-bottom: 2%;
+        }
+        .collapsedNavAcc {
+            margin: 5% auto;
+        }
+        .mobileAboutView {
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+        }
+     }
+
+     /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+        .collapsedNavItem {
+            float: left;
+            width: 25%;
+        }
+        .collapsedNavAcc {
+            margin: 5% auto;
+        }
+        .mobileAboutView {
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+        }
+
+     }
+
+     /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+
+        .mobileAboutView {
+            border: none;
+            border-radius: 0;
+        }
+     }
+
+     /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+        
+
+     }
+    </style>
+
+    <title>About</title>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logoIcon" href="index.html">
+                <img src="css/images/liveDBTLogo.png" alt="LiveDBT" class="logoStyle" />
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto nav-justified nav-pills navContainer">
+                    <li class="nav-item mx-4 collapsedNavItem">
+                        <a class="nav-link btn btn-outline-primary cssBtn" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-4 collapsedNavItem">
+                        <a class="nav-link btn btn-outline-primary cssBtn active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item mx-4 collapsedNavItem">
+                        <a class="nav-link btn btn-outline-primary cssBtn" href="dbtPractice.html">DBT Practice</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav nav-pills nav-justified mr-5 collapsedNavAcc navContainer">
+                    <li class="nav-item mx-4 collapsedNavItem">
+                        <button type="button" class="btn cssBtn" data-toggle="modal"
+                            data-target="#loginModal">Login</button>
+                    </li>
+                    <li class="nav-item mx-4 collapsedNavItem">
+                        <a class="nav-link btn btn-outline-primary cssBtn" href="signup.html">Sign-Up!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    <main>
+        <div class="container">
+            <div class="row my-3 p-2 mobileAboutView">
+                <div class="col-sm-8">
+                    <h1>What is LiveDBT?</h1>
+                    <p>
+                        LiveDBT is an application I developed to benefit Dialectical Behavior Therapy (DBT) users on a daily
+                        basis. While other DBT aplications are focused more on mobile-users, LiveDBT is designed to be used
+                        on any web-capable device, and is intended only as a method of practicing the skills as frequently as
+                        is needed. The main feature is the card system, going over each of the 5 key pillars of DBT per subject.
+                        Other features include lists, checklists, note-taking, reminders, progress overview (user profile), and
+                        more.
+                    </p>
+                </div>
+                <div class="col-sm-4"><img src="css/images/zenState.jpg" width="100%" height="auto" /></div>
+            </div>
+            <div class="row my-3 p-2 mobileAboutView">
+                <div class="col-sm-4"><img src="css/images/dbtCycle.jpg" width="100%" height="auto" /></div>
+                <div class="col-sm-8">
+                    <h1>What is DBT?</h1>
+                    <p>
+                        Dialectical behavior therapy (DBT) is an evidence-based psychotherapy that began with efforts
+                        to treat Borderline Personality Disorder (also known as Emotional Instability Disorder). DBT
+                        has been proven useful in treating mood disorders, suicidal ideation, and for change in
+                        behavioral patterns such as self-harm, and substance abuse. DBT evolved into process in which
+                        the therapist and client work with acceptance and change-oriented strategies, and ultimately
+                        balance and synthesize them, in a manner comparable to the philosophical dialectical process of
+                        hypothesis and antithesis, followed by synthesis.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 p-2 mobileAboutView">
+                <div class="col-sm-8">
+                    <h1>Who is Marsha Linehan?</h1>
+                    <p>
+                        Marsha M. Linehan (born May 5, 1943) is an American psychologist and author. She is the creator
+                        of dialectical behavior therapy (DBT), a type of psychotherapy that combines behavioral science
+                        with Buddhist concepts like acceptance and mindfulness.
+
+                        Linehan is a Professor of Psychology, Adjunct Professor of Psychiatry and Behavioral Sciences at
+                        the University of Washington in Seattle and Director of the Behavioral Research and Therapy
+                        Clinics. Her primary research is in borderline personality disorder, the application of
+                        behavioral models to suicidal behaviors, and drug abuse.
+                    </p>
+                </div>
+                <div class="col-sm-4"><img src="css/images/marshaLinehan.jpg" width="100%" height="auto" /></div>
+            </div>
+            <div class="row my-3 p-2 mobileAboutView">
+                <div class="col-sm-4"><img src="css/images/bpdthinking.png" width="100%" height="auto" /></div>
+                <div class="col-sm-8">
+                    <h1>What is BPD?</h1>
+                    <p>
+                        Borderline personality disorder (BPD), also known as emotionally unstable personality disorder
+                        (EUPD), is a long-term pattern of abnormal behavior characterised by unstable relationships
+                        with other people, unstable sense of self and unstable emotions. There is often dangerous
+                        behavior and self-harm. People may also struggle with a feeling of emptiness and a fear of
+                        abandonment. Symptoms may be brought on by seemingly normal events. The behavior typically
+                        begins by early adulthood and occurs across a variety of situations. Substance abuse,
+                        depression, and eating disorders are commonly associated with BPD. Up to 10% of people
+                        affected die by suicide.
+                    </p>
+                </div>
+            </div>
+            <div class="row my-3 p-2 mobileAboutView">
+                <div class="col-sm-8">
+                    <h1>What is the ladybug for? (Footer <image src="css/images/ladybug.svg" width="50px" height="auto"/>)</h1>
+                    <p>
+                        May is BPD Awareness Month, and to show support friends, family and others are invited to wear ladybug pins.
+                        This practice was started by the National Education Alliance for Borderline Personality Disorder (NEABPD) as
+                        a way to show support for loved ones suffering from the struggles of BPD.
+                    </p>
+                    <p>
+                        The idea for LiveDBT came from my girlfriend, who happens to suffer from BPD herself. Although she has never
+                        gotten to experience group therapy, she does have a lot of experience with self-help and practicing the
+                        skills taught in DBT. If it weren't for her help during the research of this project, I would have had to 
+                        spend a lot more time trying to understand therapy methods, history, and smaller details that can be important.
+                        So as a way of showing my support for her struggle with BPD, and appreciation for her help, LiveDBT maintains
+                        the ladybug icon year-round, since the project was created during the month of May.
+                    </p>
+                    <p>
+                        Before the idea for LiveDBT came around, I previously was helping my girlfriend with a project called
+                        "Panic Pal". It was designed as a panic attack assistant application to help people cope when they don't
+                        have access to any tools or easy methods of calming down. Panic Pal is a much larger project with many
+                        more features than LiveDBT, but one of the key parts is DBT and the skill practice. Since I was 
+                        so pivotal to the conception of Panic Pal, my girlfriend suggested I create the main component as my
+                        Portfolio 4 project, and then she could later utilize the information that I typed up, and use what I
+                        learned to build a more streamlined version into Panic Pal.
+                    </p>
+                </div>
+                <div class="col-sm-4"><img src="css/images/ladybug.jpg" width="100%" height="auto" /></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container text-center mt-5">
+        <h1>This is the bottom of the page! <image src="css/images/ladybug.svg" width="50px" height="auto"/></h1>
+        <div>
+            Icons made by <a href="https://www.flaticon.com/authors/maxim-basinski" title="Maxim Basinski">Maxim Basinski</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>
+        <p>This website is designed to be acessibility-friendly <i class="fab fa-accessible-icon"></i></p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log in!</h5>
+                    <button type="button" class="close cssBtn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Login form -->
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputUser" class="col-sm-2 col-form-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputUser" placeholder="Username or Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPass" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Remember me?
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" formaction="profile.html" class="btn btn-outline-primary cssBtn2"
+                                    onclick="check()">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- End of Modal Body -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <style type="text/css">
+    /* Extra small devices (portrait phones, less than 576px) */
+    /* No media query since this is the default in Bootstrap */
+    /* Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) { 
+        .collapsedNavItem {
+            float: left;
+            width: 25%;
+            padding-bottom: 2%;
+        }
+        .collapsedNavAcc {
+            margin: 5% auto;
+        }
+        .firstCat {
+            margin-top: 5%;
+        }
+        .mobileViewCards {
+            display: block;
+        }
+        .fullViewCards {
+            display: none;
+        }
+        .leftColumn {
+            flex-grow: 1;
+        }
+        .rightColumn {
+            flex-grow: 3;
+        }
+        .cardsContainer {
+            height: 10rem;
+        }
+     }
+
+     /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) { 
+        .collapsedNavItem {
+            float: left;
+            width: 25%;
+        }
+        .collapsedNavAcc {
+            margin: 5% auto;
+        }
+        .firstCat {
+            margin-top: 5%;
+        }
+
+     }
+
+     /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) { 
+        .firstCat {
+            margin-top: 0px;
+        }
+     }
+
+     /* Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) { 
+        .firstCat {
+            margin-top: 0px;
+        }
+        .mobileViewCards {
+            display: none;
+        }
+        .fullViewCards {
+            display: flex;
+        }
+        .leftColumn {
+        flex-grow: 1;
+        }
+        .rightColumn {
+        flex-grow: 1;
+        }
+        .cardsContainer {
+            height: 25rem;
+        }
+
+     }
+    </style>
+
+    <title>DBT Practice</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="logoIcon" href="index.html">
+            <img src="css/images/liveDBTLogo.png" alt="LiveDBT" class="logoStyle" />
+        </a>
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navContainer" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto nav-justified nav-pills">
+                <li class="nav-item mx-4 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-4 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn" href="about.html">About</a>
+                </li>
+                <li class="nav-item mx-4 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn active" href="dbtPractice.html">DBT Practice</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav nav-pills nav-justified mr-5 collapsedNavAcc">
+                <li class="nav-item mx-4 collapsedNavItem">
+                    <button type="button" class="btn cssBtn" data-toggle="modal"
+                        data-target="#loginModal">Login</button>
+                </li>
+                <li class="nav-item mx-4 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn" href="signup.html">Sign-Up!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Category Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light m-5 navContainer">
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarSupportedContentCat"
+            aria-controls="navbarSupportedContentCat" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContentCat">
+            <ul class="navbar-nav mx-auto nav-justified nav-pills">
+                <li class="nav-item mx-1 collapsedNavItem firstCat">
+                    <a class="nav-link btn btn-outline-primary cssBtn" href="#">Dialectics</a>
+                </li>
+                <li class="nav-item mx-1 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn disabled" href="#">Mindfulness</a>
+                </li>
+                <li class="nav-item mx-1 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn disabled" href="#">Distress Tolerance</a>
+                </li>
+                <li class="nav-item mx-1 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn disabled" href="#">Emotion Regulation</a>
+                </li>
+                <li class="nav-item mx-1 collapsedNavItem">
+                    <a class="nav-link btn btn-outline-primary cssBtn disabled" href="#">Interpersonal Effectiveness</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1 row, 2 columns split evenly -->
+    <div class="container-lg mb-5">
+        <div class="row mb-5">
+            <!-- Cards View Column -->
+            <div class="col card mx-5 p-3 leftColumn">
+                <div class="card">
+                    <h1 class="headerContainer p-2">Card Selection View</h1>
+
+                        <!-- Header div -->
+                        <div class="headerContainer p-2">
+                            <h1>
+                                Notes
+                                <button class="btn btn-primary cssBtn2" type="button" data-toggle="collapse"
+                                    data-target="#collapseNotes" aria-expanded="false" aria-controls="collapseNotes">
+                                    Expand
+                                </button>
+                            </h1>
+                        </div>
+
+                        <!-- Collapsing section with private user notes -->
+                        <div class="collapse" id="collapseNotes">
+                            <div class="card card-body creativeContainer">
+                                <form>
+                                    <div class="form-group">
+                                        <label id="noteLabel" for="formControlNotes">Current Card: What Are Dialectics?</label>
+                                        <textarea class="form-control" id="formControlNotes"
+                                            rows="5"></textarea>
+                                    </div>
+                                    <button type="submit" onclick="notes()"
+                                        class="btn-outline-primary cssBtn float-right mr-5">save</button>
+                                </form>
+                            </div>
+                        </div>
+
+                            <!-- Sample Card -->
+                                    <!-- <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#1</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">What are Dialectics?</h5>
+                                            <a href="#" class="btn btn-outline-primary">View</a>
+                                        </div>
+                                    </div> -->
+                                
+                        <!-- Cards Container -->
+                        <div class="d-flex align-content-start flex-wrap p-3 overflow-auto cardsContainer">
+                            <div class="p-2">
+
+                                <div class="m-0 p-0 mobileViewCards">
+                                    <ol class="pl-0">
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">What are Dialectics? <a href="#" class="btn btn-outline-primary cssBtn ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">Exception Rule <a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">Make Gradual Changes <a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">Be Flexible <a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">Compassion for Others<a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">The Other Side<a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">Understanding Other Perspectives <a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                        <!-- Card -->
+                                        <li>
+                                            <h5 class="card-title">What's Not a Problem? <a href="#" class="btn btn-outline-primary cssBtn disabled ml-5">View</a></h5>
+                                        </li>
+                                    </ol>
+                                </div>
+
+                                <div class="fullViewCards row justify-content-center">
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#1</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">What are Dialectics?</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#2</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Exception Rule</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#3</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Make Gradual Changes</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#4</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Be Flexible</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#5</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Compassion for Others</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#6</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">The Other Side</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#7</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Seeing Other Perspectives</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Card -->
+                                    <div class="card m-1" style="width: 30%; height: 20rem;">
+                                        <table style="height: 2rem;">
+                                            <tbody>
+                                                <tr class="bg-primary myBg mx-auto my-3" style="width: 100%; height: 10rem">
+                                                    <div>
+                                                        <td class="align-middle">
+                                                            <h1 class="text-center">#8</h1>
+                                                        </td>
+                                                    </div>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">What's Not a Problem?</h5>
+                                            <a href="#" class="btn btn-outline-primary cssBtn disabled">View</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    <!-- End of card container -->
+
+                </div>
+            </div>
+
+            <!-- Card Detail Column -->
+            <div class="col card mx-5 p-3 rightColumn">
+                <div class="card">
+                    <h1 class="bg-primary myh2 p-2">Card Detail View</h1>
+                    <!-- DL#1 -->
+                    <div class="overflow-auto">
+                        <h2 class="p-2">What are Dialectics?</h2>
+                        <p class="p-2">
+                            Dialectics relate to the synthesis of opposites. Instead of thinking all-or-nothing,
+                            either-or, or black-and-white terms, try seeing the shades of gray between the black and
+                            white. Practice being flexible in your thinking and finding middle-ground options in your
+                            behavior. For example-
+                        </p>
+                        <ul>
+                            <li>
+                                When in conflict, find something to agree about in the other
+                                person’s perspective.
+                            </li>
+                            <li>
+                                Instead of procrastinating on a task, break the ice with one or two
+                                small steps.
+                            </li>
+                            <li>
+                                Make a list of at least five positive qualities you (or someone else you are
+                                sometimes down on) have.
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </main>
+
+    <section class="container">
+        <h1>How to:</h1>
+        <p>
+            To start, select one of the five available lesson categories by selecting either the text or the icon. 
+            Each category goes over one of the key aspects of Dialectical Behavioral Therapy, and within each category 
+            include multiple lessons and best practices, acronyms and activities. If you would like more information
+            about each category, utilize the button below to expand an info section.
+        </p>
+    </section>
+
+    <!-- Collapsable info section with details about each category -->
+    <section class="container">
+        <div>
+            <button class="btn btn-primary cssBtn2" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Category Descriptions
+            </button>
+        </div>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <ul>
+                    <li>
+                        <h1>Mindfulness— </h1>
+                        <p>focusing on the present (“living in the moment”).</p>
+                    </li>
+                    <li>
+                        <h1>Distress Tolerance- </h1>
+                        <p>
+                            learning to accept oneself and the current situation. More specifically, people learn
+                            how to tolerate or survive crises using these four techniques: distraction,
+                            self-soothing, improving the
+                            movement, and thinking of pros and cons.
+                        </p>
+                    </li>
+                    <li>
+                        <h1>Interpersonal Effectiveness— </h1>
+                        <p>
+                            how to be assertive in a relationship (for example, expressing needs and
+                            saying “no”) but still keeping that relationship positive and healthy.
+                        </p>
+                    </li>
+                    <li>
+                        <h1>Emotion Regulation— </h1>
+                        <p>
+                            recognizing and coping with negative emotions (for example, anger) and reducing one’s
+                            emotional vulnerability by increasing positive emotional experiences.
+                        </p>
+                    </li>
+                    <li>
+                        <h1>Dialectics— </h1>
+                        <p>
+                            relates to the synthesis of opposites. Instead of thinking all or nothing, either-or, or
+                            black and white terms, try seeing the seeing the shades of gray between the black and
+                            white.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container text-center mt-5">
+        <h1>This is the bottom of the page!
+            <image src="css/images/ladybug.svg" width="50px" height="auto" />
+        </h1>
+        <div>
+            Icons made by <a href="https://www.flaticon.com/authors/maxim-basinski" title="Maxim Basinski">Maxim
+                Basinski</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0
+                BY</a>
+        </div>
+        <p>This website is designed to be acessibility-friendly <i class="fab fa-accessible-icon"></i></p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Log in!</h5>
+                    <button type="button" class="close cssBtn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Login form -->
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputUser" class="col-sm-2 col-form-label">Username</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputUser" placeholder="Username or Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPass" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                        Remember me?
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" formaction="profile.html" class="btn btn-outline-primary cssBtn2"
+                                    onclick="check()">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- End of Modal Body -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

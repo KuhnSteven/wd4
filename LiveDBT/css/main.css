@@ -1,0 +1,115 @@
+/* CSS Styling */
+
+/* Color Theme -
+ OLDER COLORS, DO NOT USE, DOES NOT MATCH THEME (kept for documentation)
+⁃	FBCB62 Orange Yellow
+⁃	9CAFB7 Pewter Blue (dark greyish blue)
+
+ CURRENT COLORS
+⁃	FFFFFA Baby Powder (off white)
+-   1a1a1a ? (off black)
+-   #01295F (Cool Black) -
+-   #437F97 (Queen Blue) - 
+-   #805DBA (Toolbox)  - 
+-   #39A0ED (Brilliant Azure) - 
+-   #36F1CD (Turquoise) - 
+ */
+
+ :root {
+     --prim-bg-color: #437F97;
+     --secd-bg-color: #36F1CD;
+     --tert-bg-color: #39A0ED;
+     --quad-bg-color: #805DBA;
+     --sept-bg-color: #01295F;
+ }
+ a{
+     color: var(--sept-bg-color)
+ }
+
+ .cssBtn{
+     color: var(--sept-bg-color)!important;
+     border: 1px solid var(--sept-bg-color)!important;
+ }
+  .cssBtn:hover {
+      color: white !important;
+      border: 1px solid var(--sept-bg-color);
+      background-color: var(--sept-bg-color);
+  }
+  .cssBtn:active {
+      color: white !important;
+      border: 1px solid var(--sept-bg-color);
+      background-color: var(--sept-bg-color);
+  }
+  .active {
+        color: white !important;
+        border: 1px solid var(--sept-bg-color)!important;
+        background-color: var(--sept-bg-color) !important;
+  }
+  .cssBtn2{
+    background-color: var(--sept-bg-color)!important;
+    color: white;
+    border: 1px solid var(--sept-bg-color)!important;
+  }
+  .cssBtn2:hover {
+      background-color: white !important;
+      color: var(--sept-bg-color) !important;
+      border: 1px solid var(--sept-bg-color)!important;
+  }
+  .myBg{
+      background-color: var(--tert-bg-color) !important;
+      color: var(--sept-bg-color);
+  }
+  .myh2{
+      background-color: var(--tert-bg-color) !important;
+      color: var(--sept-bg-color);
+  }
+ /* Alignment & Sizing Rules */
+.logoStyle {
+    width: 100%
+}
+.logoIcon{
+    width: 200px !important;
+}
+
+.center-cropped {
+    object-fit: none;
+    object-position: top; /* Center the image within the element, in this case along the top */
+    width: 350px;
+    height: 350px;
+}
+
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.maxCarouselSize {
+    max-width: 1440px;
+    max-height: 950px;
+}
+
+/* STYLE OVERRIDES */
+.headerContainer {
+    color: #1a1a1a;
+    background-color: var(--secd-bg-color);
+}
+.creativeContainer {
+    color: #1a1a1a;
+    background-color: var(--quad-bg-color);
+}
+
+
+/* EXAMPLE CLASS COLOR OVERRIDE */
+.newBtn{
+    color: black;
+    background-color: green;
+    border: 1px solid red;
+}
+.newBtn:hover{
+    color: green;
+    background-color: red;
+    border: 1px solid black;
+}
+#noteLabel {
+        color: white;
+    }
